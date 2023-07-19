@@ -1,0 +1,16 @@
+:root {
+  --blueColor: #3b6b97e1;
+  --blackColor: #0000;
+  --whiteColor: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blackColor);
+}/*# sourceMappingURL=index.css.map */
