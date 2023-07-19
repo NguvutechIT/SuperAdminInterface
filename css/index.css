@@ -1,13 +1,14 @@
 :root {
-  --blueColor: #3b6b97e1;
-  --blackColor: #0000;
+  --blueColor: #b2def0a4;
+  --blackColor: #000;
   --whiteColor: #fff;
+  --white: #ffffffe7;
 }
 
 body {
   width: 100%;
-  height: 100vh;
   font-size: 16px;
+  background-color: var(--white);
   font-family: "Sen", sans-serif;
 }
 
@@ -17,7 +18,31 @@ section {
 }
 
 .left-bloc {
+  height: 100vh;
   background-color: var(--blueColor);
+  box-shadow: 0px 0px 3px 0px var(--blackColor);
+}
+.left-bloc h3 {
+  padding-left: 35px;
+  margin-top: 25px;
+}
+.left-bloc .items {
+  margin-top: 25px;
+}
+.left-bloc .items a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin-top: 5px;
+}
+.left-bloc .items i {
+  margin-left: 20px;
+}
+.left-bloc .items .dashboard {
+  background-color: var(--whiteColor);
+  padding: 10px;
 }
 
 *,
@@ -29,14 +54,26 @@ section {
 }
 
 a {
+  color: black;
   text-decoration: none;
-  color: var(--whiteColor);
 }
 
 button {
   border: none;
+  border-radius: 20px;
+  margin-top: 180px;
+  margin-left: 20px;
 }
 button a {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  gap: 2px;
+  font-weight: bolder;
+  font-family: "Sen", sans-serif;
+  color: var(--blackColor);
+}
+button a i {
+  margin-left: -50px;
 }/*# sourceMappingURL=index.css.map */
