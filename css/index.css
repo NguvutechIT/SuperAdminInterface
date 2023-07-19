@@ -29,20 +29,22 @@ section {
 .left-bloc .items {
   margin-top: 25px;
 }
-.left-bloc .items a {
+.left-bloc .items div {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
   padding: 10px;
   margin-top: 5px;
+  padding-left: 30px;
 }
-.left-bloc .items i {
-  margin-left: 20px;
+.left-bloc .items div:hover {
+  background-color: var(--whiteColor);
 }
 .left-bloc .items .dashboard {
   background-color: var(--whiteColor);
   padding: 10px;
+  padding-left: 30px;
 }
 
 *,
@@ -63,17 +65,8 @@ button {
   border-radius: 20px;
   margin-top: 180px;
   margin-left: 20px;
-}
-button a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px;
-  gap: 2px;
-  font-weight: bolder;
+  padding: 10px 15px;
   font-family: "Sen", sans-serif;
-  color: var(--blackColor);
-}
-button a i {
-  margin-left: -50px;
+  font-weight: bolder;
+  box-shadow: 0px 0px 3px 0px solid var(--blackColor);
 }/*# sourceMappingURL=index.css.map */
