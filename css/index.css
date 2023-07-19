@@ -4,7 +4,24 @@
   --whiteColor: #fff;
 }
 
-* {
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 20% auto;
+}
+
+.left-bloc {
+  background-color: var(--blueColor);
+}
+
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,5 +29,5 @@
 
 a {
   text-decoration: none;
-  color: var(--blackColor);
+  color: var(--whiteColor);
 }/*# sourceMappingURL=index.css.map */
