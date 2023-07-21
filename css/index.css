@@ -23,7 +23,6 @@ section {
 }
 
 .left-bloc {
-  height: 100vh;
   background-color: var(--principalcolor);
   box-shadow: 0px 0px 1px 0px var(--blackColor);
 }
@@ -109,7 +108,7 @@ section {
 }
 .circle-svg {
   display: block;
-  max-height: 80px;
+  min-height: 50%;
   margin-top: 10px;
 }
 
@@ -133,38 +132,45 @@ section {
   stroke-width: 2.5;
 }
 
-.first_item {
+.bloc-right-blocs-sublocs2 {
+  display: grid;
+  grid-template-columns: auto 50%;
   margin-top: 20px;
+  gap: 20px;
+}
+
+.first_item {
   padding: 15px;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
   gap: 40px;
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 2px 0px var(--gray);
 }
 .first_item .item1, .first_item .item2, .first_item .item3 {
-  padding-top: 3px;
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
   gap: 6px;
 }
 .first_item .progress_point .item1 h5 {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: var(--skyblue);
 }
 .first_item .progress_point .item2 h5 {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: var(--blackColor);
 }
 .first_item .progress_point .item3 h5 {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: var(--principalcolor);
 }
@@ -244,4 +250,13 @@ img {
   border: 2px solid var(--white);
   width: 25px;
   border: 1px solid var(--blackColor);
+}
+
+@media (max-width: 978px) {
+  .left-bloc {
+    display: none;
+  }
+  section {
+    grid-template-columns: auto;
+  }
 }/*# sourceMappingURL=index.css.map */

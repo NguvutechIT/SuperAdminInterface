@@ -1,0 +1,10 @@
+@use '../Utils/'as u;
+
+@include u.breakpoint(laptop){
+    .left-bloc{
+        display: none;
+    }
+    section{
+        grid-template-columns: auto;
+    }
+}

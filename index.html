@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="js/highcharts.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Maven+Pro&family=Sen:wght@400;700&display=swap" rel="stylesheet">
 
     <title>Interface SuperAdmin NTech</title>
@@ -100,9 +101,9 @@
 
 
                 <div class="bloc-right-blocs-sublocs2">
-                    <div class="first_items">
+                    <div class="first_item">
                         <div class="progress-circle-bar">
-                            <h4>Students</h4>
+                            <h2>Students</h2>
                             <div>
                                 <svg viewBox="0 0 36 36" class="circle-svg">
               
@@ -139,82 +140,85 @@
 
 
                 <div class="bloc-right-blocs-sublocs3">
-                    <table class="table">
-                        <thead>
-                            <td>Nº</td>
-                            <td>photo</td>
-                            <td>Names</td>
-                            <td>Pseudo</td>
-                            <td>Date</td>
-                            <td>City</td>
-                            <td>Statut</td>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>01</td>
-                                <td><p><img src="Images/user.png" alt=""></p></td>
-                                <td>Antares</td>
-                                <td>Mugisho</td>
-                                <td>12/09/2002</td>
-                                <td>kinshasa</td>
-                                <td>Available</td>
-                            </tr>
-                             <tr>
-                                <td>01</td>
-                                <td><p><img src="Images/user.png" alt=""></p></td>
-                                <td>Antares</td>
-                                <td>Mugisho</td>
-                                <td>12/09/2002</td>
-                                <td>kinshasa</td>
-                                <td>unvailable</td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td><p><img src="Images/user.png" alt=""></p></td>
-                                <td>Antares</td>
-                                <td>Mugisho</td>
-                                <td>12/09/2002</td>
-                                <td>kinshasa</td>
-                                <td>Available</td>
-                            </tr>
-                             <tr>
-                                <td>01</td>
-                                <td><p><img src="Images/user.png" alt=""></p></td>
-                                <td>Antares</td>
-                                <td>Mugisho</td>
-                                <td>12/09/2002</td>
-                                <td>kinshasa</td>
-                                <td>unvailable</td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td><p><img src="Images/user.png" alt=""></p></td>
-                                <td>Antares</td>
-                                <td>Mugisho</td>
-                                <td>12/09/2002</td>
-                                <td>kinshasa</td>
-                                <td>Available</td>
-                            </tr>
-                             <tr>
-                                <td>01</td>
-                                <td><p><img src="Images/user.png" alt=""></p></td>
-                                <td>Antares</td>
-                                <td>Mugisho</td>
-                                <td>12/09/2002</td>
-                                <td>kinshasa</td>
-                                <td>unvailable</td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td><p><img src="Images/user.png" alt=""></p></td>
-                                <td>Antares</td>
-                                <td>Mugisho</td>
-                                <td>12/09/2002</td>
-                                <td>kinshasa</td>
-                                <td>unvailable</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div id="table">
+                        <table class="table">
+                            <thead>
+                                <td>Nº</td>
+                                <td>photo</td>
+                                <td>Names</td>
+                                <td>Pseudo</td>
+                                <td>Date</td>
+                                <td>City</td>
+                                <td>Statut</td>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td><p><img src="Images/user.png" alt=""></p></td>
+                                    <td>Antares</td>
+                                    <td>Mugisho</td>
+                                    <td>12/09/2002</td>
+                                    <td>kinshasa</td>
+                                    <td>Available</td>
+                                </tr>
+                                 <tr>
+                                    <td>01</td>
+                                    <td><p><img src="Images/user.png" alt=""></p></td>
+                                    <td>Antares</td>
+                                    <td>Mugisho</td>
+                                    <td>12/09/2002</td>
+                                    <td>kinshasa</td>
+                                    <td>unvailable</td>
+                                </tr>
+                                <tr>
+                                    <td>01</td>
+                                    <td><p><img src="Images/user.png" alt=""></p></td>
+                                    <td>Antares</td>
+                                    <td>Mugisho</td>
+                                    <td>12/09/2002</td>
+                                    <td>kinshasa</td>
+                                    <td>Available</td>
+                                </tr>
+                                 <tr>
+                                    <td>01</td>
+                                    <td><p><img src="Images/user.png" alt=""></p></td>
+                                    <td>Antares</td>
+                                    <td>Mugisho</td>
+                                    <td>12/09/2002</td>
+                                    <td>kinshasa</td>
+                                    <td>unvailable</td>
+                                </tr>
+                                <tr>
+                                    <td>01</td>
+                                    <td><p><img src="Images/user.png" alt=""></p></td>
+                                    <td>Antares</td>
+                                    <td>Mugisho</td>
+                                    <td>12/09/2002</td>
+                                    <td>kinshasa</td>
+                                    <td>Available</td>
+                                </tr>
+                                 <tr>
+                                    <td>01</td>
+                                    <td><p><img src="Images/user.png" alt=""></p></td>
+                                    <td>Antares</td>
+                                    <td>Mugisho</td>
+                                    <td>12/09/2002</td>
+                                    <td>kinshasa</td>
+                                    <td>unvailable</td>
+                                </tr>
+                                <tr>
+                                    <td>01</td>
+                                    <td><p><img src="Images/user.png" alt=""></p></td>
+                                    <td>Antares</td>
+                                    <td>Mugisho</td>
+                                    <td>12/09/2002</td>
+                                    <td>kinshasa</td>
+                                    <td>unvailable</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                  
                 </div>
             </div>
         </div>
