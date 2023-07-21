@@ -10,19 +10,29 @@
 
 //Pour les liens
 a{
-    color: black;
+    color: var(--blackColor);
     text-decoration: none;
+}
+.header_items{
+   i{
+   font-size:1.3rem ;
+} 
 }
 
 //button
 button{
-    border: none;
+    border: 1px solid black;
     border-radius: 20px;
     margin-top: 180px;
     margin-left: 20px;
     padding: 10px 15px;
     font-family: u.$font;
     font-weight: bolder;
-    box-shadow: 0px 0px 3px 0px solid var(--blackColor);
+    background-color: var(--whiteColor);
 }
-
+img{
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    width: 25px;
+    border: 1px solid var(--blackColor); 
+}
