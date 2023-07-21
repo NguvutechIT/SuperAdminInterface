@@ -1,0 +1,11 @@
+@mixin progress_circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+@mixin display_flex{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
