@@ -137,14 +137,14 @@ section{
 .circle-svg path.percent {
     stroke: var(--blackColor);
     fill: none; 
-    stroke-width: 2.5; 
+    stroke-width: 2.8; 
     stroke-linecap: round;
     animation: progress 1s ease-out forwards;
 }
 .circle-svg path.around {
     stroke: var(--gray);
     fill: none;
-    stroke-width: 2.5; 
+    stroke-width: 2.8; 
 }
 .bloc-right-blocs-sublocs2{
     display: grid;
