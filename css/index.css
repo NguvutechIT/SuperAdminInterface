@@ -360,7 +360,7 @@ img {
 @media screen and (max-width: 768px) and (max-width: 492px) {
   #table {
     margin: auto;
-    max-width: 330px;
+    max-width: 320px;
   }
   #table .table {
     width: 320%;
