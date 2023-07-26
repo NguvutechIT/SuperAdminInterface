@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded',  function(){
     const chart = Highcharts.chart('bloc-charts',{
         chart:{
-            type: 'spline'
+            type: 'spline',
         },
         title: {
             text: ' Grades',

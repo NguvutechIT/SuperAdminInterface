@@ -61,16 +61,38 @@ section{
         input{
             outline: none;
             border: none;
-            width: 300px;
         }
     }
 }
+.nav_bloc{
+    @extend .left-bloc;
+    display: none;
+    .bar_menu{
+        @extend .items;
+        position: absolute;
+        background-color: white;
+        margin-top: 109px;
+        margin-left: -200px;
+        transition: all 0.5s ease;
+        box-shadow: 0px 0px 3px 0px var(--gray);
+        width: 200px;
+        height: 100vh;
+        display: inline;
+        z-index: 10;
+        border-top-left-radius: 10px;
+        &.mobile-menu{
+          margin-left: 15px;
+        }  
+    }
+}
 .bloc-right{
+    width: 100%;
     .bloc-right-blocs{
-        padding: 20px;
+        padding: 15px;
         .bloc-right-blocs-sublocs1{
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
         .bloc_students{
             padding: 15px;
             border-radius: 5px;
@@ -101,34 +123,33 @@ section{
       stroke-dasharray: 0 100;
     }
 }
-  .circle-svg {
+.circle-svg {
     display: block;
     min-height: 50%;
     margin-top: 10px;
 }
-  .circle-svg text {
+.circle-svg text {
     text-align: center;
     color: var(--blackColor);
     font-size: 8px;
 }
-  .circle-svg path.percent {
+.circle-svg path.percent {
     stroke: var(--blackColor);
     fill: none; 
     stroke-width: 2.5; 
     stroke-linecap: round;
     animation: progress 1s ease-out forwards;
 }
-  .circle-svg path.around {
+.circle-svg path.around {
     stroke: var(--gray);
     fill: none;
     stroke-width: 2.5; 
 }
-
 .bloc-right-blocs-sublocs2{
     display: grid;
-    grid-template-columns: auto 50%;
+    grid-template-columns: 48% 50%;
     margin-top: 20px;
-    gap: 20px;
+    column-gap: 20px;
 }
 .first_item{
     padding: 15px;
@@ -160,7 +181,7 @@ section{
 
 #bloc-charts{
     height: 250px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0px 0px 3px 0px var(--gray);
 }
 
@@ -180,7 +201,7 @@ table{
         }
     }
     thead tr:nth-child(odd){
-        border-top-left-radius: 10px; 
+        border-top-left-radius: 5px; 
     }
     tbody tr:nth-child(even){
         background-color: var(--principalcolor); 
@@ -189,15 +210,15 @@ table{
         background-color: var(--whiteColor);
     }
     tbody tr:first-child td:first-child{
-        border-top-left-radius: 10px;
+        border-top-left-radius: 5px;
     }
     tbody tr:first-child td:last-child{
-        border-top-right-radius: 10px;
+        border-top-right-radius: 5px;
     }
     tbody tr:last-child td:first-child{
         border-bottom-left-radius: 10px;
     }
     tbody tr:last-child td:last-child{
-        border-bottom-right-radius: 10px;
+        border-bottom-right-radius: 5px;
     }
 }

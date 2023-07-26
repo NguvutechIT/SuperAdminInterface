@@ -22,18 +22,18 @@ section {
   grid-template-columns: 20% auto;
 }
 
-.left-bloc {
+.left-bloc, .nav_bloc {
   background-color: var(--principalcolor);
   box-shadow: 0px 0px 1px 0px var(--blackColor);
 }
-.left-bloc h2 {
+.left-bloc h2, .nav_bloc h2 {
   padding-left: 35px;
   margin-top: 25px;
 }
-.left-bloc .items {
+.left-bloc .items, .nav_bloc .items, .nav_bloc .bar_menu {
   margin-top: 25px;
 }
-.left-bloc .items div {
+.left-bloc .items div, .nav_bloc .items div, .nav_bloc .bar_menu div {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -42,10 +42,10 @@ section {
   margin-top: 5px;
   padding-left: 30px;
 }
-.left-bloc .items div:hover {
+.left-bloc .items div:hover, .nav_bloc .items div:hover, .nav_bloc .bar_menu div:hover {
   background-color: var(--whiteColor);
 }
-.left-bloc .items .dashboard {
+.left-bloc .items .dashboard, .nav_bloc .items .dashboard, .nav_bloc .bar_menu .dashboard {
   background-color: var(--whiteColor);
   padding: 10px;
   padding-left: 30px;
@@ -73,15 +73,38 @@ section {
 .header .search_bar input {
   outline: none;
   border: none;
-  width: 300px;
 }
 
+.nav_bloc {
+  display: none;
+}
+.nav_bloc .bar_menu {
+  position: absolute;
+  background-color: white;
+  margin-top: 109px;
+  margin-left: -200px;
+  transition: all 0.5s ease;
+  box-shadow: 0px 0px 3px 0px var(--gray);
+  width: 200px;
+  height: 100vh;
+  display: inline;
+  z-index: 10;
+  border-top-left-radius: 10px;
+}
+.nav_bloc .bar_menu.mobile-menu {
+  margin-left: 15px;
+}
+
+.bloc-right {
+  width: 100%;
+}
 .bloc-right .bloc-right-blocs {
-  padding: 20px;
+  padding: 15px;
 }
 .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
 }
 .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_students, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_schools, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_courses, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_incomes {
   padding: 15px;
@@ -134,9 +157,9 @@ section {
 
 .bloc-right-blocs-sublocs2 {
   display: grid;
-  grid-template-columns: auto 50%;
+  grid-template-columns: 48% 50%;
   margin-top: 20px;
-  gap: 20px;
+  column-gap: 20px;
 }
 
 .first_item {
@@ -177,7 +200,7 @@ section {
 
 #bloc-charts {
   height: 250px;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0px 0px 3px 0px var(--gray);
 }
 
@@ -196,7 +219,7 @@ table tbody tr td p img {
   width: 20px;
 }
 table thead tr:nth-child(odd) {
-  border-top-left-radius: 10px;
+  border-top-left-radius: 5px;
 }
 table tbody tr:nth-child(even) {
   background-color: var(--principalcolor);
@@ -205,16 +228,16 @@ table tbody tr:nth-child(odd) {
   background-color: var(--whiteColor);
 }
 table tbody tr:first-child td:first-child {
-  border-top-left-radius: 10px;
+  border-top-left-radius: 5px;
 }
 table tbody tr:first-child td:last-child {
-  border-top-right-radius: 10px;
+  border-top-right-radius: 5px;
 }
 table tbody tr:last-child td:first-child {
   border-bottom-left-radius: 10px;
 }
 table tbody tr:last-child td:last-child {
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 5px;
 }
 
 *,
@@ -231,7 +254,7 @@ a {
 }
 
 .header_items i {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 button {
@@ -253,10 +276,112 @@ img {
 }
 
 @media (max-width: 978px) {
+  .bar_menu {
+    position: absolute;
+    top: -33px;
+  }
+  .nav_bloc {
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .nav_bloc .icon {
+    position: absolute;
+    margin-left: 23px;
+    margin-top: 17px;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  .nav_bloc button {
+    margin-top: 120px;
+  }
+  .search_bar {
+    width: 40%;
+    margin-left: 50px;
+  }
   .left-bloc {
     display: none;
   }
   section {
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .bloc-right-blocs-sublocs2 {
+    grid-template-columns: 50%;
+    row-gap: 20px;
+  }
+  .bloc-right-blocs-sublocs2 .first_item, .bloc-right-blocs-sublocs2 .bloc-chart {
+    min-width: 200%;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 720px) {
+  .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 620px) {
+  .bar_menu {
+    position: absolute;
+    top: 5px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .header_items {
+    justify-content: right;
+    padding-right: 10px;
+    margin-top: 8px;
+  }
+  .search_bar {
+    width: 90%;
+    margin-left: 50px;
+  }
+  #table {
+    overflow: auto;
+  }
+  #table .table {
+    width: 180%;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 492px) {
+  #table {
+    margin: auto;
+    max-width: 320px;
+  }
+  #table .table {
+    width: 320%;
+  }
+}
+@media screen and (max-width: 480px) and (max-width: 400px) {
+  body {
+    border: 2px solid red;
+  }
+  .search_bar {
+    padding-right: 70px;
+  }
+  .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 {
+    grid-template-columns: 1fr;
+  }
+  .bloc_students div, .bloc_schools div, .bloc_courses div, .bloc_incomes div {
+    justify-content: center;
+  }
+  .bloc_students p, .bloc_schools p, .bloc_courses p, .bloc_incomes p {
+    text-align: center;
+    margin-left: -55px;
+  }
+  .bloc-chart {
+    overflow: auto;
+  }
+  .bloc-chart #bloc-charts {
+    width: 150%;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 480px) and (max-width: 366px) {
+  #table {
+    max-width: 270px;
   }
 }/*# sourceMappingURL=index.css.map */
