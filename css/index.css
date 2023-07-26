@@ -159,7 +159,8 @@ section {
   display: grid;
   grid-template-columns: 48% 50%;
   margin-top: 20px;
-  column-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 
 .first_item {
