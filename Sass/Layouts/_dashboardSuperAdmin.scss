@@ -57,6 +57,9 @@
         }
     }
     @media screen and (max-width:620px){
+        body{
+            border: 1px solid red;
+        }
         .bar_menu{
             position: absolute;
             top: 5px;
@@ -78,11 +81,20 @@
             }
         }
     }
+    @media screen and (max-width:510px){
+        #table{
+            margin: auto;
+            max-width: 420px;
+            .table{
+                width: 320%;
+            }
+        }
+    }
     @media screen and (max-width:492px){
         
         #table{
             margin: auto;
-            max-width: 320px;
+            max-width: 315px;
             .table{
                 width: 320%;
             }
@@ -92,9 +104,6 @@
 }
 @include u.breakpoint(mobile){
     @media screen and (max-width: 400px){
-        body{
-            border: 2px solid red;
-        }
         .search_bar{
             padding-right: 70px;
         }
