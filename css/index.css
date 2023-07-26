@@ -73,6 +73,7 @@ section {
 .header .search_bar input {
   outline: none;
   border: none;
+  background: none;
 }
 
 .nav_bloc {
@@ -290,7 +291,7 @@ img {
   .nav_bloc .icon {
     position: absolute;
     margin-left: 23px;
-    margin-top: 18px;
+    margin-top: 20px;
     cursor: pointer;
     font-size: 1.4rem;
   }
@@ -301,6 +302,7 @@ img {
     display: flex;
     flex-direction: row;
     gap: 8px;
+    margin-left: 35px;
   }
   .search_bar input {
     width: 100%;
@@ -339,10 +341,6 @@ img {
     justify-content: right;
     padding-right: 10px;
     margin-top: 8px;
-  }
-  .search_bar {
-    width: 90%;
-    margin-left: 50px;
   }
   #table {
     overflow: auto;
