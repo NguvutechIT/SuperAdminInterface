@@ -208,7 +208,6 @@ section {
 
 table {
   border-collapse: collapse;
-  margin: auto;
   width: 100%;
   margin-top: 20px;
 }
@@ -361,7 +360,7 @@ img {
 @media screen and (max-width: 768px) and (max-width: 492px) {
   #table {
     margin: auto;
-    max-width: 380px;
+    max-width: 340px;
   }
   #table .table {
     width: 320%;
