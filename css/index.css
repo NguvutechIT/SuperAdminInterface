@@ -52,7 +52,7 @@ section {
 }
 
 .header_items {
-  gap: 15px;
+  gap: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -66,7 +66,7 @@ section {
   box-shadow: 0px 0px 1px 0px var(--blackColor);
 }
 .header .search_bar {
-  border: 1px solid black;
+  border: 1px solid var(--blackColor);
   border-radius: 5px;
   padding: 5px;
 }
@@ -81,8 +81,8 @@ section {
 }
 .nav_bloc .bar_menu {
   position: absolute;
-  background-color: white;
-  margin-top: 109px;
+  background-color: var(--whiteColor);
+  margin-top: 94px;
   margin-left: -200px;
   transition: all 0.5s ease;
   box-shadow: 0px 0px 3px 0px var(--gray);
@@ -90,10 +90,10 @@ section {
   height: 100vh;
   display: inline;
   z-index: 10;
-  border-top-left-radius: 10px;
+  border-top-right-radius: 15px;
 }
 .nav_bloc .bar_menu.mobile-menu {
-  margin-left: 15px;
+  margin-left: 0px;
 }
 
 .bloc-right {
@@ -254,10 +254,6 @@ a {
   text-decoration: none;
 }
 
-.header_items i {
-  font-size: 1.2rem;
-}
-
 button {
   border: 1px solid black;
   border-radius: 20px;
@@ -329,7 +325,6 @@ img {
 }
 @media screen and (max-width: 768px) and (max-width: 620px) {
   .bar_menu {
-    position: absolute;
     top: 5px;
   }
   .header {
