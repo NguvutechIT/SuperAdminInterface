@@ -1,0 +1,262 @@
+:root {
+  --skyblue: #bcd9e7;
+  --gray: #c4c4c4;
+  --blending_blue: #0075df;
+  --bluehover: #94bfe9;
+  --principalcolor: #f5f5f5;
+  --principalcoloropacity:#d4e2efa2;
+  --blueColor: #407c87;
+  --blackColor: #000;
+  --whiteColor: #fff;
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+  font-family: "Sen", sans-serif;
+  background-color: var(--principalcolor);
+}
+
+section {
+  display: grid;
+  grid-template-columns: 20% auto;
+}
+
+.left-bloc {
+  background-color: var(--principalcolor);
+  box-shadow: 0px 0px 1px 0px var(--blackColor);
+}
+.left-bloc h2 {
+  padding-left: 35px;
+  margin-top: 25px;
+}
+.left-bloc .items {
+  margin-top: 25px;
+}
+.left-bloc .items div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin-top: 5px;
+  padding-left: 30px;
+}
+.left-bloc .items div:hover {
+  background-color: var(--whiteColor);
+}
+.left-bloc .items .dashboard {
+  background-color: var(--whiteColor);
+  padding: 10px;
+  padding-left: 30px;
+}
+
+.header_items {
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header {
+  padding: 15px;
+  background-color: var(--whiteColor);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 1px 0px var(--blackColor);
+}
+.header .search_bar {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+.header .search_bar input {
+  outline: none;
+  border: none;
+  width: 300px;
+}
+
+.bloc-right .bloc-right-blocs {
+  padding: 20px;
+}
+.bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 {
+  display: flex;
+  justify-content: space-between;
+}
+.bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_students, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_schools, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_courses, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_incomes {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: var(--whiteColor);
+  box-shadow: 0px 0px 3px 0px var(--gray);
+}
+.bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_students div, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_schools div, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_courses div, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_incomes div {
+  border-left: 4px solid var(--skyblue);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+  padding-bottom: 20px;
+  padding-left: 8px;
+}
+.bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_students p, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_schools p, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_courses p, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_incomes p {
+  padding-left: 15px;
+}
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+.circle-svg {
+  display: block;
+  min-height: 50%;
+  margin-top: 10px;
+}
+
+.circle-svg text {
+  text-align: center;
+  color: var(--blackColor);
+  font-size: 8px;
+}
+
+.circle-svg path.percent {
+  stroke: var(--blackColor);
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+.circle-svg path.around {
+  stroke: var(--gray);
+  fill: none;
+  stroke-width: 2.5;
+}
+
+.bloc-right-blocs-sublocs2 {
+  display: grid;
+  grid-template-columns: auto 50%;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.first_item {
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  background-color: var(--whiteColor);
+  box-shadow: 0px 0px 2px 0px var(--gray);
+}
+.first_item .item1, .first_item .item2, .first_item .item3 {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+.first_item .progress_point .item1 h5 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--skyblue);
+}
+.first_item .progress_point .item2 h5 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--blackColor);
+}
+.first_item .progress_point .item3 h5 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--principalcolor);
+}
+
+#bloc-charts {
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 0px var(--gray);
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 100%;
+  margin-top: 20px;
+}
+table th, table td {
+  padding: 4px 4px;
+}
+table tbody tr td p img {
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  width: 20px;
+}
+table thead tr:nth-child(odd) {
+  border-top-left-radius: 10px;
+}
+table tbody tr:nth-child(even) {
+  background-color: var(--principalcolor);
+}
+table tbody tr:nth-child(odd) {
+  background-color: var(--whiteColor);
+}
+table tbody tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+table tbody tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--blackColor);
+  text-decoration: none;
+}
+
+.header_items i {
+  font-size: 1.3rem;
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-top: 180px;
+  margin-left: 20px;
+  padding: 10px 15px;
+  font-family: "Sen", sans-serif;
+  font-weight: bolder;
+  background-color: var(--whiteColor);
+}
+
+img {
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  width: 25px;
+  border: 1px solid var(--blackColor);
+}
+
+@media (max-width: 978px) {
+  .left-bloc {
+    display: none;
+  }
+  section {
+    grid-template-columns: auto;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,47 @@
+@use '../Utils/' as u;
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Pour les liens
+a{
+    color: var(--blackColor);
+    text-decoration: none;
+}
+.header_items{
+   i{
+   font-size: 1.2rem ;
+} 
+}
+
+//button
+.logout{
+    border: 1px solid var(--blackColor);
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 20px;
+    padding: 10px 15px;
+    font-family: u.$font;
+    font-weight: bolder;
+    background-color: var(--whiteColor);
+}
+.voir-plus{
+    margin-top: 10px;
+    border: none;
+    float: right;
+    box-shadow: 0px 0px 1px 0px var(--gray);
+    margin-left: 0;
+    margin-bottom: 10px;
+    @extend .logout;
+}
+img{
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    width: 25px;
+    border: 1px solid var(--blackColor); 
+}

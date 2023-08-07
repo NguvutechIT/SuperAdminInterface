@@ -1,0 +1,9 @@
+@media (max-width: 480px) {
+  .bloc_central {
+    width: 100%;
+    margin: 20px;
+  }
+  .bloc_central form {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Add.css.map */

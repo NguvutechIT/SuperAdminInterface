@@ -1,0 +1,150 @@
+@use '../Utils/' as u;
+@use '../Utils/mixins' as *;
+
+body{
+    width: 100%;
+    font-size: 16px;
+    font-family: u.$font;
+    background-color: var(--principalcolor);
+}
+section{
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+.left-bloc{
+    height: 100vh;
+    background-color: var(--principalcolor);
+    box-shadow: 0px 0px 1px 0px var(--blackColor);
+    h2{
+        padding-left: 35px;
+        margin-top: 25px;
+    }
+    .items{
+        margin-top: 25px;
+        div{
+            @include display_flex;
+            gap: 10px;
+            padding: 10px;
+            margin-top: 5px;
+            padding-left: 30px;
+            &:hover{
+                background-color: var(--whiteColor);
+                box-shadow: 0px 0px 1px 0px var(--gray);
+            }
+        }
+        .options{
+            padding: 10px;
+            padding-left: 30px;
+            background-color: var(--whiteColor);
+            box-shadow: 0px 0px 1px 0px var(--gray);
+        }
+    }
+}
+
+.header{
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    @include display_flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 2px 0px var(--gray);
+
+    .menu{
+        i{
+            display: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .nav-menu{
+            position: absolute;
+            left: 0;
+            top: 60px;
+            width: 230px;
+            height: 100vh;
+            margin-left: -100%;
+            display: none;
+            transition: all 0.5s ease;
+            border-top-right-radius: 5px;
+            box-shadow: 0px 0px 3px 0px var(--gray);
+            background-color: var(--whiteColor);
+            .items{
+                margin-top: 25px;
+                border: 2px solid red;
+                div{
+                    @include display_flex;
+                    gap: 10px;
+                    padding: 10px;
+                    margin-top: 5px;
+                    padding-left: 30px;
+                    &:hover{
+                        background-color: var(--principalcolor);
+                        box-shadow: 0px 0px 1px 0px var(--gray);
+                        border: 2px solid blue;
+                    }
+                }
+                
+                .school{
+                    padding: 10px;
+                    padding-left: 30px;
+                    background-color: var(--principalcolor);
+                    box-shadow: 0px 0px 1px 0px var(--gray);
+                    border: 2px solid green;
+                }
+                .logout{
+                    margin-top: 100px;
+                    i{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .add-school{
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: var(--whiteColor);
+        box-shadow: 0px 0px 1px 0px var(--gray);
+    }
+
+}
+.ecole-enregistree{
+    padding: 20px;
+
+    .first-item{
+        @include display_flex;
+        justify-content: space-between;
+        div{
+            @include display_flex;
+            gap: 10px;
+            p{
+                color: var(--gray);
+            }
+        }
+    }
+}
+.allitems{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: var(--whiteColor);
+    box-shadow: 0px 0px 3px 0px var(--gray);
+    .ecole{
+        @include display_flex;
+        justify-content: space-between;
+        padding: 8px;
+        div{
+            @include display_flex;
+            gap: 10px;
+            a{
+                color: var(--blueColor);
+            }
+            div{
+                h2{
+                    height: 15px;
+                    border: 1px solid var(--blueColor);
+                }
+            }
+        }
+    }
+}

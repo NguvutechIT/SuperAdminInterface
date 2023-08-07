@@ -1,0 +1,19 @@
+@use '../Utils/' as u;
+@use '../Utils/mixins' as *;
+
+body{
+    width: 100%;
+    font-size: 16px;
+    font-family: u.$font;
+    background-color: var(--principalcolor);
+}
+.principal_block{
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+    p{
+        margin-top: 15px;
+        text-align: justify;
+    }
+}
+
