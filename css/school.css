@@ -233,7 +233,7 @@ img {
   .header .menu .nav-menu {
     display: initial;
   }
-  .header .menu .mobile_menu {
+  .header .menu .nav-menu .mobile_menu {
     margin-left: 0;
   }
   section {
