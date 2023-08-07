@@ -10,7 +10,7 @@
                 .nav-menu{
                     display: initial;
                 }
-                .mobile-menu{
+                .mobile_menu{
                     margin-left: 0;
                 }
             }
@@ -19,9 +19,9 @@
             display: grid;
             grid-template-columns: auto;
         }
-    }
-    .options{
-        border: 2px solid green;
+        .left-bloc{
+            display: none;
+        }
     }
 }
 
