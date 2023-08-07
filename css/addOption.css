@@ -48,6 +48,7 @@ body {
 
 input {
   width: 100%;
+  font-family: "Sen", sans-serif;
   background-color: white;
   border-radius: 5px;
   border: 0.5px solid var(--gray);
@@ -70,6 +71,7 @@ button {
   padding: 7px 15px;
   font-family: "Sen", sans-serif;
   font-weight: bolder;
+  font-family: "Sen", sans-serif;
   background-color: var(--whiteColor);
   border: none;
   border: 1px solid var(--gray);

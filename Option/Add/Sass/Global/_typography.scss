@@ -10,6 +10,7 @@
 }
 input{
     width: 100%;
+    font-family: u.$font;
     @include input_properties();
     outline: 1px var(--gray); 
 }
@@ -24,6 +25,7 @@ button{
     padding: 7px 15px;
     font-family: u.$font;
     font-weight: bolder;
+    font-family: u.$font;
     background-color: var(--whiteColor);
     border: none;
     border: 1px solid var(--gray);

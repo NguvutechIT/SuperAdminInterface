@@ -11,11 +11,13 @@
 
 input{
     width: 100%;
+    font-family: u.$font;
     @include input_properties();
     outline: 1px var(--gray); 
 }
 select{
     width: 100%;
+    font-family: u.$font;
     @include input_properties(); 
 }
 button{

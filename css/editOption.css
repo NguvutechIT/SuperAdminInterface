@@ -48,6 +48,7 @@ body {
 
 input {
   width: 100%;
+  font-family: "Sen", sans-serif;
   background-color: white;
   border-radius: 5px;
   border: 0.5px solid var(--gray);
@@ -57,6 +58,7 @@ input {
 
 select {
   width: 100%;
+  font-family: "Sen", sans-serif;
   background-color: white;
   border-radius: 5px;
   border: 0.5px solid var(--gray);
