@@ -22,6 +22,8 @@ button{
     width: 100px;
     float: right;
     cursor: pointer;
+    font-weight: bolder;
+    font-family: u.$font;
     @include input_properties();
 }
 label{
