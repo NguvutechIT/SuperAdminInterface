@@ -81,6 +81,15 @@ section{
         display: inline;
         z-index: 10;
         border-top-right-radius: 15px;
+        .dashboard{
+            margin-top: 20px;
+            background-color: var(--principalcolor);
+        }
+        div{
+            &:hover{
+                background-color: var(--principalcolor);
+            }
+        }
         &.mobile-menu{
           margin-left: 0px;
         }  

@@ -92,6 +92,13 @@ section {
   z-index: 10;
   border-top-right-radius: 15px;
 }
+.nav_bloc .bar_menu .dashboard {
+  margin-top: 20px;
+  background-color: var(--principalcolor);
+}
+.nav_bloc .bar_menu div:hover {
+  background-color: var(--principalcolor);
+}
 .nav_bloc .bar_menu.mobile-menu {
   margin-left: 0px;
 }
