@@ -1,0 +1,68 @@
+@use '../Utils/'as u;
+
+@include u.breakpoint(laptop){
+    @media screen and (max-width: 900px){
+        .header{
+            .menu{
+                i{
+                    display: initial;   
+                }
+                .nav-menu{
+                    display: initial;
+                }
+                .mobile-menu{
+                    margin-left: 0;
+                }
+            }
+        }
+        section{
+            display: grid;
+            grid-template-columns: auto;
+        }
+        .left-bloc{
+            display: none;
+        }
+    }
+}
+@include u.breakpoint(tablet){
+    .cours-enregistree{
+        padding: 10px;
+        
+    .first-item{
+        h3{
+            margin-bottom: 10px;
+        }
+        display: grid;
+    }
+
+    } 
+}
+@include u.breakpoint(mobile){
+    .allitems{
+        .cours{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: start;
+            div{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+    .header{
+        padding-right: 10px;
+        padding-left: 10px;
+    } 
+    .cours-enregistree{
+        padding: 10px;
+        
+    } 
+    .allitems{
+        .items{
+            .logout{
+                margin-bottom: 10px;
+            }
+        } 
+    }  
+}
