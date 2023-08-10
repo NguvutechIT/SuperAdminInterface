@@ -5,12 +5,13 @@
         .header{
             .menu{
                 i{
-                    display: initial;   
+                    display: initial;
                 }
                 .nav-menu{
                     display: initial;
                 }
                 .mobiles_menu{
+                    position: absolute;
                     margin-left: 0;
                 }
             }

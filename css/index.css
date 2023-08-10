@@ -304,7 +304,7 @@ img {
     display: flex;
     flex-direction: row;
     gap: 8px;
-    margin-left: 35px;
+    margin-left: 38px;
   }
   .search_bar input {
     width: 100%;
