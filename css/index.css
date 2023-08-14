@@ -94,7 +94,7 @@ section {
   border-top-right-radius: 15px;
 }
 .nav_bloc .bar_menu .dashboard {
-  margin-top: 20px;
+  margin-top: 15px;
   background-color: var(--principalcolor);
 }
 .nav_bloc .bar_menu div:hover {
