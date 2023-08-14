@@ -65,8 +65,10 @@ section {
 }
 .header .menu i {
   display: none;
-  font-size: 20px;
   cursor: pointer;
+}
+.header .menu .icon {
+  font-size: 20px;
 }
 .header .menu .nav-menu {
   position: absolute;
@@ -82,7 +84,7 @@ section {
   background-color: var(--whiteColor);
 }
 .header .menu .nav-menu .items {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 .header .menu .nav-menu .items div {
   display: flex;
@@ -91,7 +93,7 @@ section {
   gap: 10px;
   padding: 10px;
   margin-top: 5px;
-  padding-left: 30px;
+  padding-left: 15px;
 }
 .header .menu .nav-menu .items div:hover {
   background-color: var(--principalcolor);
@@ -99,7 +101,7 @@ section {
 }
 .header .menu .nav-menu .items .options {
   padding: 10px;
-  padding-left: 30px;
+  padding-left: 15px;
   background-color: var(--principalcolor);
   box-shadow: 0px 0px 1px 0px var(--gray);
 }
@@ -190,7 +192,7 @@ a {
   border: 1px solid var(--blackColor);
   border-radius: 20px;
   margin-top: 180px;
-  margin-left: 20px;
+  margin-left: 15px;
   padding: 10px 15px;
   font-family: "Sen", sans-serif;
   font-weight: bolder;

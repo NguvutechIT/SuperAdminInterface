@@ -52,8 +52,10 @@ section{
     .menu{
         i{
             display: none;
-            font-size: 20px;
             cursor: pointer;
+        }
+        .icon{
+            font-size: 20px;
         }
         .nav-menu{
             position: absolute;
@@ -68,13 +70,13 @@ section{
             box-shadow: 0px 0px 3px 0px var(--gray);
             background-color: var(--whiteColor);
             .items{
-                margin-top: 25px;
+                margin-top: 10px;
                 div{
                     @include display_flex;
                     gap: 10px;
                     padding: 10px;
                     margin-top: 5px;
-                    padding-left: 30px;
+                    padding-left: 15px;
                     &:hover{
                         background-color: var(--principalcolor);
                         box-shadow: 0px 0px 1px 0px var(--gray);
@@ -83,7 +85,7 @@ section{
                 
                 .options{
                     padding: 10px;
-                    padding-left: 30px;
+                    padding-left: 15px;
                     background-color: var(--principalcolor);
                     box-shadow: 0px 0px 1px 0px var(--gray);
                 }
