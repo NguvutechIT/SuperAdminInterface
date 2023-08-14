@@ -1,0 +1,20 @@
+@use '../Utils/' as u;
+*, 
+::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+button{
+    border: 1px solid var(--bluehover);
+    padding: 8px 12px;
+    border-radius: 5px;
+    float: right;
+    a{
+        color: var(--blackColor);
+        font-family: u.$font;
+        font-weight: bolder;
+    }
+}

@@ -1,0 +1,22 @@
+@use '../Utils/' as u;
+
+@include u.breakpoint (laptop){
+    section{
+        width: 100%;
+    }
+}
+@include u.breakpoint(mobile){
+    body{
+        height: 0;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    section{
+        padding: 15px;
+        .container{
+            p{   
+                text-align: initial;
+            }
+        }
+    }
+}

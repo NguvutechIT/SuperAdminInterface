@@ -1,0 +1,29 @@
+@use '../Utils/' as u;
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    font-family: u.$font;
+    background-color: var(--principalcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    width: 70%;
+    padding: 20px;
+    .container{
+        h3{
+            text-align: center;
+            color: var(--bluehover);
+        }
+        p{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+    }
+}
