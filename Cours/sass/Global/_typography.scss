@@ -24,11 +24,21 @@ a{
     border: 1px solid var(--blackColor);
     border-radius: 20px;
     margin-top: 180px;
-    margin-left: 20px;
+    margin-left: 15px;
     padding: 10px 15px;
     font-family: u.$font;
     font-weight: bolder;
     background-color: var(--whiteColor);
+    i{
+        color: var(--blackColor);
+    }
+    &:hover{
+        border: none;
+        background-color: var(--blueColor);
+        i, a{
+            color: var(--whiteColor);
+        }
+    }
 }
 .voir-plus{
     margin-top: 10px;
