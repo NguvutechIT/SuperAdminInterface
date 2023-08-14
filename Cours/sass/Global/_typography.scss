@@ -38,6 +38,15 @@ a{
     margin-left: 0;
     margin-bottom: 10px;
     @extend .logout;
+    i{
+        color: var(--blackColor);
+    }
+    &:hover{
+        background-color: var(--blueColor);
+        i, a{
+            color: var(--whiteColor);
+        }
+    }
 }
 img{
     border-radius: 50%;
@@ -52,7 +61,8 @@ select{
     @include input_properties(); 
 }
 button{
-    background-color: rgba(0, 0, 0, 0.521);
+    background-color: var(--blueColor);
+    cursor: pointer;
     color: var(--whiteColor);
     border-radius: 5px;
     font-family: u.$font;
