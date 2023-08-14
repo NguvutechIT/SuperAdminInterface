@@ -20,7 +20,7 @@ section{
         margin-top: 25px;
     }
     .items{
-        margin-top: 25px;
+        margin-top: 5px;
         div{
             display: flex;
             flex-direction: row;
@@ -28,7 +28,7 @@ section{
             gap: 10px;
             padding: 10px;
             margin-top: 5px;
-            padding-left: 30px;
+            padding-left: 15px;
             &:hover{
                 background-color: var(--whiteColor);
             }
@@ -37,7 +37,7 @@ section{
         .dashboard{
             background-color: var(--whiteColor);
             padding: 10px;
-            padding-left: 30px;
+            padding-left: 15px;
         }
     }
 }
@@ -61,7 +61,8 @@ section{
         input{
             outline: none;
             border: none;
-            background: none
+            background: none;
+            font-family: u.$font;
         }
     }
 }

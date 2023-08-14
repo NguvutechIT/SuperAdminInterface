@@ -31,7 +31,7 @@ section {
   margin-top: 25px;
 }
 .left-bloc .items, .nav_bloc .items, .nav_bloc .bar_menu {
-  margin-top: 25px;
+  margin-top: 5px;
 }
 .left-bloc .items div, .nav_bloc .items div, .nav_bloc .bar_menu div {
   display: flex;
@@ -40,7 +40,7 @@ section {
   gap: 10px;
   padding: 10px;
   margin-top: 5px;
-  padding-left: 30px;
+  padding-left: 15px;
 }
 .left-bloc .items div:hover, .nav_bloc .items div:hover, .nav_bloc .bar_menu div:hover {
   background-color: var(--whiteColor);
@@ -48,7 +48,7 @@ section {
 .left-bloc .items .dashboard, .nav_bloc .items .dashboard, .nav_bloc .bar_menu .dashboard {
   background-color: var(--whiteColor);
   padding: 10px;
-  padding-left: 30px;
+  padding-left: 15px;
 }
 
 .header_items {
@@ -74,6 +74,7 @@ section {
   outline: none;
   border: none;
   background: none;
+  font-family: "Sen", sans-serif;
 }
 
 .nav_bloc {
