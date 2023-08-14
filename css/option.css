@@ -115,6 +115,12 @@ section {
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 1px 0px var(--gray);
 }
+.header .add-school:hover {
+  background-color: var(--blueColor);
+}
+.header .add-school:hover i, .header .add-school:hover a {
+  color: var(--whiteColor);
+}
 
 .ecole-enregistree {
   padding: 20px;
@@ -198,6 +204,12 @@ a {
   box-shadow: 0px 0px 1px 0px var(--gray);
   margin-left: 0;
   margin-bottom: 10px;
+}
+.voir-plus:hover {
+  background-color: var(--blueColor);
+}
+.voir-plus:hover i, .voir-plus:hover a {
+  color: var(--whiteColor);
 }
 
 img {

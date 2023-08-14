@@ -38,6 +38,12 @@ a{
     margin-left: 0;
     margin-bottom: 10px;
     @extend .logout;
+    &:hover{
+        background-color: var(--blueColor);
+        i, a{
+            color: var(--whiteColor);
+        }
+    }
 }
 img{
     border-radius: 50%;

@@ -102,6 +102,12 @@ section{
         border-radius: 20px;
         background-color: var(--whiteColor);
         box-shadow: 0px 0px 1px 0px var(--gray);
+        &:hover{
+            background-color: var(--blueColor);
+            i, a{
+                color: var(--whiteColor);
+            }
+        }
     }
 
 }
