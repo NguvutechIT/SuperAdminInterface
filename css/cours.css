@@ -223,6 +223,8 @@ img {
 }
 
 select {
+  outline: none;
+  font-family: "Sen", sans-serif;
   background-color: var(--whiteColor);
   border-radius: 5px;
   border: 0.5px solid var(--gray);
@@ -233,6 +235,7 @@ button {
   background-color: rgba(0, 0, 0, 0.521);
   color: var(--whiteColor);
   border-radius: 5px;
+  font-family: "Sen", sans-serif;
   border: 0.5px solid var(--gray);
   padding: 8px;
 }

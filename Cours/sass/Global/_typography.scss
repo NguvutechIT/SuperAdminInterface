@@ -47,12 +47,15 @@ img{
 }
 
 select{
+    outline: none;
+    font-family: u.$font;
     @include input_properties(); 
 }
 button{
     background-color: rgba(0, 0, 0, 0.521);
     color: var(--whiteColor);
     border-radius: 5px;
+    font-family: u.$font;
     border: 0.5px solid var(--gray);
     padding: 8px;
 }
