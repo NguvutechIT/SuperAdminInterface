@@ -123,6 +123,18 @@ section {
   color: var(--whiteColor);
 }
 
+.cours-enregistree {
+  padding: 20px;
+}
+.cours-enregistree .first-item .filtre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  margin-top: 8px;
+}
+
 .allitems {
   padding: 15px;
   margin-top: 10px;
@@ -260,14 +272,15 @@ button {
   .cours-enregistree {
     padding: 10px;
   }
-  .cours-enregistree .first-item {
+}
+@media screen and (max-width: 768px) and (max-width: 495px) {
+  .cours-enregistree .first-item .filtre {
     display: grid;
-  }
-  .cours-enregistree .first-item h3 {
-    margin-bottom: 10px;
+    grid-template-columns: auto auto;
+    row-gap: 8px;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) and (max-width: 570px) {
   .allitems .cours {
     display: flex;
     flex-direction: column;
@@ -278,6 +291,8 @@ button {
     display: flex;
     justify-content: flex-end;
   }
+}
+@media (max-width: 480px) {
   .header {
     padding-right: 10px;
     padding-left: 10px;
@@ -287,5 +302,11 @@ button {
   }
   .allitems .items .logout {
     margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 480px) and (max-width: 405px) {
+  .cours-enregistree .first-item .filtre {
+    display: grid;
+    grid-template-columns: auto;
   }
 }/*# sourceMappingURL=cours.css.map */

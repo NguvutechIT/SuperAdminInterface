@@ -115,8 +115,13 @@ section{
 
 }
 .cours-enregistree{
+    padding: 20px;
     .first-item{
-        
+        .filtre{
+            @include display_flex;
+            column-gap: 5px;
+            margin-top: 8px;
+        }
     }
 }
 .allitems{
