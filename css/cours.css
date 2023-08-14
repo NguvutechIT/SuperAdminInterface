@@ -123,25 +123,6 @@ section {
   color: var(--whiteColor);
 }
 
-.cours-enregistree {
-  padding: 20px;
-}
-.cours-enregistree .first-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.cours-enregistree .first-item div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
-.cours-enregistree .first-item div p {
-  color: var(--gray);
-}
-
 .allitems {
   padding: 15px;
   margin-top: 10px;

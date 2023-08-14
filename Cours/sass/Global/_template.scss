@@ -115,18 +115,8 @@ section{
 
 }
 .cours-enregistree{
-    padding: 20px;
-
     .first-item{
-        @include display_flex;
-        justify-content: space-between;
-        div{
-            @include display_flex;
-            gap: 10px;
-            p{
-                color: var(--gray);
-            }
-        }
+        
     }
 }
 .allitems{
