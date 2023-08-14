@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/school.css">
+    <link rel="stylesheet" href="../css/option.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Maven+Pro&family=Sen:wght@400;700&display=swap" rel="stylesheet">
-    <title>School</title>
+    <title>Options</title>
 </head>
 <body>
     <section>
@@ -21,13 +21,13 @@
                 </div>
                 <div class="school">
                     <i class="fa-solid fa-school-flag"></i>
-                    <a href="#">Schools</a>
+                    <a href="School.html">Schools</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-book"></i>
                     <a href="cours.html">Cours</a>
                 </div>
-                <div>
+                <div class="options">
                     <i class="fa-solid fa-filter"></i>
                     <a href="option.html">Options</a>
                 </div>
@@ -43,7 +43,8 @@
                     <i class="fa-solid fa-power-off"></i>
                     <a href="#">Logout</a>
                 </button>
-            </div>
+
+            </div>    
         </div>
         <div class="right-bloc">
             <div class="header">
@@ -57,13 +58,13 @@
                             </div>
                             <div class="school">
                                 <i class="fa-solid fa-school-flag"></i>
-                                <a href="#">Schools</a>
+                                <a href="School.html">Schools</a>
                             </div>
                             <div>
                                 <i class="fa-solid fa-book"></i>
                                 <a href="cours.html">Cours</a>
                             </div>
-                            <div>
+                            <div class="options">
                                 <i class="fa-solid fa-filter"></i>
                                 <a href="option.html">Options</a>
                             </div>
@@ -85,80 +86,60 @@
                 </div>
                 <div class="add-school">
                     <i class="fa-solid fa-circle-plus"></i>
-                    <a href="ajouter.html">Ajouter une école</a>
+                    <a href="optionAdd.html">Ajouter une option</a>
                 </div>
             </div>
             <div class="ecole-enregistree">
                 <div class="first-item">
-                    <h3>ECOLES ENREGISTREES</h3>
-                    <div>
-                        <p>20</p>
-                        <i class="fa-solid fa-school-flag"></i>
-                    </div>
+                    <h3>LISTES DE TOUTES LES OPTIONS</h3>
                 </div>
                 <div class="second-item">
                     <div class="allitems">
-                        <div class="active">
-                            <a href="#">Active</a>
-                            <h4></h4>
-                        </div>
                         <div class="ecole">
-                            <p><a href="show.html">01. Institut saint MICHEL</a></p>
+                             <a href="optionShow.html">1. Commercial et Gestion</a>
+                            <div>
+                                <div>
+                                    <a href="##">Supprimer</a>
+                                    <h2></h2>
+                                </div>
+                                <div>
+                                    <a href="optionEdit.html">Modifier</a>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="allitems">
+                        <div class="ecole">
+                            <a href="optionShow.html">2. Commercial et Gestion</a>
                             <div>
                                 <div>
                                     <a href="#">Supprimer</a>
                                     <h2></h2>
                                 </div>
                                 <div>
-                                    <a href="modifier.html">Modifier</a>
+                                    <a href="optionEdit.html">Modifier</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="allitems">
-                        <div class="active">
-                            <a href="#">Active</a>
-                            <h4></h4>
-                        </div>
                         <div class="ecole">
-                            <p><a href="show.html">01. Institut saint MICHEL</a></p>
+                            <a href="optionShow.html">3. Commercial et Gestion</a>
                             <div>
                                 <div>
                                     <a href="#">Supprimer</a>
                                     <h2></h2>
                                 </div>
                                 <div>
-                                    <a href="modifier.html">Modifier</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="allitems">
-                        <div class="active">
-                            <a href="#">Active</a>
-                            <h4></h4>
-                        </div>
-                        <div class="ecole">
-                            <p><a href="show.html">01. Institut saint MICHEL</a></p>
-                            <div>
-                                <div>
-                                    <a href="#">Supprimer</a>
-                                    <h2></h2>
-                                </div>
-                                <div>
-                                    <a href="modifier.html">Modifier</a>
+                                    <a href="optionEdit.html">Modifier</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="allitems">
-                    <div class="active">
-                        <a href="#">Active</a>
-                        <h4></h4>
-                    </div>
                     <div class="ecole">
-                        <p><a href="show.html">01. Institut saint MICHEL</a></p>
+                        <a href="optionShow.html">4. Commercial et Gestion</a>
                         <div>
                             <div>
                                 <a href="#">Supprimer</a>
@@ -167,18 +148,14 @@
                                 <h2></h2>
                             </div>
                             <div>
-                                <a href="modifier.html">Modifier</a>
+                                <a href="optionEdit.html">Modifier</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="allitems">
-                    <div class="active">
-                        <a href="#">Active</a>
-                        <h4></h4>
-                    </div>
                     <div class="ecole">
-                        <p><a href="show.html">01. Institut saint MICHEL</a></p>
+                        <a href="optionShow.html">5. Commercial et Gestion</a>
                         <div>
                             <div>
                                 <a href="#">Supprimer</a>
@@ -187,18 +164,14 @@
                                 <h2></h2>
                             </div>
                             <div>
-                                <a href="modifier.html">Modifier</a>
+                                <a href="optionEdit.html">Modifier</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="allitems">
-                    <div class="active">
-                        <a href="#">Active</a>
-                        <h4></h4>
-                    </div>
                     <div class="ecole">
-                        <p><a href="show.html">01. Institut saint MICHEL</a></p>
+                        <a href="optionShow.html">6. Commercial et Gestion</a>
                         <div>
                             <div>
                                 <a href="#">Supprimer</a>
@@ -207,18 +180,14 @@
                                 <h2></h2>
                             </div>
                             <div>
-                                <a href="modifier.html">Modifier</a>
+                                <a href="optionEdit.html">Modifier</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="allitems">
-                    <div class="active">
-                        <a href="#">Active</a>
-                        <h4></h4>
-                    </div>
                     <div class="ecole">
-                        <p><a href="show.html">01. Institut saint MICHEL</a></p>
+                        <a href="optionShow.html">7. Commercial et Gestion</a>
                         <div>
                             <div>
                                 <a href="#">Supprimer</a>
@@ -227,7 +196,7 @@
                                 <h2></h2>
                             </div>
                             <div>
-                                <a href="modifier.html">Modifier</a>
+                                <a href="optionEdit.html">Modifier</a>
                             </div>
                         </div>
                     </div>
@@ -240,7 +209,7 @@
         </div>
     </section>
 
-    <script async src="School/js/app.js"></script>
+    <script async src="Option/js/app.js"></script>
     
 </body>
 </html>
