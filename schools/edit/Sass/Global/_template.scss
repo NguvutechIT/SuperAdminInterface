@@ -1,0 +1,27 @@
+@use '../Utils/' as u;
+@use '../Utils/mixins' as *;
+
+body{
+    width: 100%;
+    padding: 30px;
+    font-size: 16px;
+    font-family: u.$font;
+    background-color: var(--whiteColor);
+    display: flex;
+    justify-content: center;
+   
+}
+.bloc_central{
+    padding: 40px;
+    border-radius: 10px;
+    background-color: var(--principalcolor);
+    box-shadow: 0px 0px 4px 0px var(--gray);
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    div{
+        margin-bottom: 18px;
+        display: grid;
+    }
+}

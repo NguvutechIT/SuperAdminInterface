@@ -1,0 +1,17 @@
+@use '../Utils/'as u;
+
+@include u.breakpoint(mobile){
+    body{
+        padding: 0px;
+        background-color: var(--principalcolor);
+    }
+    .bloc_central{
+        width: 100%;
+        padding: 15px;
+        border-radius: 0px;
+        box-shadow: none;
+        form{
+            width: 100%;
+        } 
+    }
+}

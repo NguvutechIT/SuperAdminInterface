@@ -1,0 +1,40 @@
+@use '../Utils/' as u;
+@use '../Utils/mixins' as *;
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input{
+    width: 100%;
+    outline: none;
+    font-family: u.$font;
+    border: 1px solid var(--gray); 
+    @include input_properties();
+}
+select{
+    width: 100%;
+    @include input_properties(); 
+}
+button{
+    width: 100px;
+    float: right;
+    cursor: pointer;
+    font-family: u.$font;
+    font-weight: bolder;
+    @include input_properties();
+}
+label{
+    margin-bottom: 8px;
+    font-weight: bolder;
+}
+textarea{
+    outline: none;
+    border-radius: 4px;
+    font-family: u.$font;
+    border: 1px solid var(--gray);
+}
