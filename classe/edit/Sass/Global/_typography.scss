@@ -1,0 +1,32 @@
+@use '../Utils/' as u;
+@use '../Utils/mixins' as *;
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input{
+    width: 100%;
+    @include input_properties();
+    outline: 1px var(--gray); 
+    font-family: u.$font;
+}
+select{
+    width: 100%;
+    @include input_properties(); 
+}
+button{
+    width: 100px;
+    float: right;
+    cursor: pointer;
+    font-family: u.$font;
+    font-weight: bolder;
+    @include input_properties();
+}
+label{
+    margin-bottom: 8px;
+}
