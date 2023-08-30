@@ -113,12 +113,9 @@ section {
   border-radius: 20px;
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 1px 0px var(--gray);
-}
-.header .add-course:hover {
-  color: var(--whiteColor);
   background-color: var(--blueColor);
 }
-.header .add-course:hover a {
+.header .add-course i, .header .add-course a {
   color: var(--whiteColor);
 }
 
@@ -134,45 +131,29 @@ section {
   margin-top: 8px;
 }
 
-.allitems {
+.cours-container {
   padding: 15px;
   margin-top: 10px;
   border-radius: 5px;
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 3px 0px var(--gray);
 }
-.allitems .active {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-  justify-content: flex-end;
-}
-.allitems .active a {
-  color: var(--gray);
-}
-.allitems .active h4 {
-  width: 8px;
-  height: 8px;
-  background-color: var(--green);
-  border-radius: 50%;
-}
-.allitems .cours {
+.cours-container .cours {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.allitems .cours div {
+.cours-container .cours div {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
 }
-.allitems .cours div a {
+.cours-container .cours div a {
   color: var(--blueColor);
 }
-.allitems .cours div div h2 {
+.cours-container .cours div div h2 {
   height: 15px;
   border: 1px solid var(--blueColor);
 }
@@ -195,7 +176,7 @@ a {
 }
 
 .logout, .voir-plus {
-  border: 1px solid var(--blackColor);
+  border: none;
   border-radius: 20px;
   margin-top: 220px;
   margin-left: 15px;
@@ -203,15 +184,9 @@ a {
   font-family: "Sen", sans-serif;
   font-weight: bolder;
   background-color: var(--whiteColor);
-}
-.logout i, .voir-plus i {
-  color: var(--blackColor);
-}
-.logout:hover, .voir-plus:hover {
-  border: none;
   background-color: var(--blueColor);
 }
-.logout:hover i, .voir-plus:hover i, .logout:hover a, .voir-plus:hover a {
+.logout i, .voir-plus i, .logout a, .voir-plus a {
   color: var(--whiteColor);
 }
 
@@ -222,15 +197,6 @@ a {
   box-shadow: 0px 0px 1px 0px var(--gray);
   margin-left: 0;
   margin-bottom: 10px;
-}
-.voir-plus i {
-  color: var(--blackColor);
-}
-.voir-plus:hover {
-  background-color: var(--blueColor);
-}
-.voir-plus:hover i, .voir-plus:hover a {
-  color: var(--whiteColor);
 }
 
 img {
@@ -290,13 +256,13 @@ button {
   }
 }
 @media screen and (max-width: 768px) and (max-width: 570px) {
-  .allitems .cours {
+  .cours-container .cours {
     display: flex;
     flex-direction: column;
     gap: 8px;
     align-items: start;
   }
-  .allitems .cours div {
+  .cours-container .cours div {
     display: flex;
     justify-content: flex-end;
   }
@@ -309,7 +275,7 @@ button {
   .cours-enregistree {
     padding: 10px;
   }
-  .allitems .items .logout {
+  .cours-container .items .logout {
     margin-bottom: 10px;
   }
 }

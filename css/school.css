@@ -111,13 +111,10 @@ section {
 .header .add-school {
   padding: 10px 20px;
   border-radius: 20px;
-  background-color: var(--whiteColor);
+  background-color: var(--blueColor);
   box-shadow: 0px 0px 1px 0px var(--gray);
 }
-.header .add-school:hover {
-  background-color: var(--blueColor);
-}
-.header .add-school:hover i, .header .add-school:hover a {
+.header .add-school i, .header .add-school a {
   color: var(--whiteColor);
 }
 
@@ -140,45 +137,45 @@ section {
   color: var(--gray);
 }
 
-.allitems {
+.ecole-container {
   padding: 10px;
   margin-top: 10px;
   border-radius: 5px;
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 3px 0px var(--gray);
 }
-.allitems .active {
+.ecole-container .active {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 8px;
   justify-content: flex-end;
 }
-.allitems .active a {
+.ecole-container .active a {
   color: var(--gray);
 }
-.allitems .active h4 {
+.ecole-container .active h4 {
   width: 8px;
   height: 8px;
   background-color: var(--green);
   border-radius: 50%;
 }
-.allitems .ecole {
+.ecole-container .ecole {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.allitems .ecole div {
+.ecole-container .ecole div {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
 }
-.allitems .ecole div a {
+.ecole-container .ecole div a {
   color: var(--blueColor);
 }
-.allitems .ecole div div h2 {
+.ecole-container .ecole div div h2 {
   height: 15px;
   border: 1px solid var(--blueColor);
 }
@@ -201,20 +198,16 @@ a {
 }
 
 .logout, .voir-plus {
-  border: 1px solid var(--blackColor);
+  border: none;
   border-radius: 20px;
   margin-top: 220px;
   margin-left: 15px;
   padding: 10px 15px;
   font-family: "Sen", sans-serif;
   font-weight: bolder;
-  background-color: var(--whiteColor);
-}
-.logout:hover, .voir-plus:hover {
-  border: none;
   background-color: var(--blueColor);
 }
-.logout:hover i, .voir-plus:hover i, .logout:hover a, .voir-plus:hover a {
+.logout i, .voir-plus i, .logout a, .voir-plus a {
   color: var(--whiteColor);
 }
 
@@ -225,12 +218,6 @@ a {
   float: right;
   box-shadow: 0px 0px 1px 0px var(--gray);
   margin-left: 0;
-}
-.voir-plus:hover {
-  background-color: var(--blueColor);
-}
-.voir-plus:hover i, .voir-plus:hover a {
-  color: var(--whiteColor);
 }
 
 img {
@@ -259,13 +246,13 @@ img {
   }
 }
 @media (max-width: 480px) {
-  .allitems .ecole {
+  .ecole-container .ecole {
     display: flex;
     flex-direction: column;
     gap: 8px;
     align-items: start;
   }
-  .allitems .ecole div {
+  .ecole-container .ecole div {
     display: flex;
     justify-content: flex-end;
   }
@@ -275,8 +262,5 @@ img {
   }
   .ecole-enregistree {
     padding: 10px;
-  }
-  .allitems .items .logout {
-    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=school.css.map */

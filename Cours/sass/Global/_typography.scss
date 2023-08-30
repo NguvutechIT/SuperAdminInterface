@@ -21,7 +21,7 @@ a{
 
 //button
 .logout{
-    border: 1px solid var(--blackColor);
+    border: none;
     border-radius: 20px;
     margin-top: 220px;
     margin-left: 15px;
@@ -29,15 +29,9 @@ a{
     font-family: u.$font;
     font-weight: bolder;
     background-color: var(--whiteColor);
-    i{
-        color: var(--blackColor);
-    }
-    &:hover{
-        border: none;
-        background-color: var(--blueColor);
-        i, a{
-            color: var(--whiteColor);
-        }
+    background-color: var(--blueColor);
+    i, a{
+        color: var(--whiteColor);
     }
 }
 .voir-plus{
@@ -48,15 +42,6 @@ a{
     margin-left: 0;
     margin-bottom: 10px;
     @extend .logout;
-    i{
-        color: var(--blackColor);
-    }
-    &:hover{
-        background-color: var(--blueColor);
-        i, a{
-            color: var(--whiteColor);
-        }
-    }
 }
 img{
     border-radius: 50%;

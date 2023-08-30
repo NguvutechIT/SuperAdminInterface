@@ -21,7 +21,7 @@ a{
 
 //button
 .logout{
-    border: 1px solid var(--blackColor);
+    border: none;
     border-radius: 20px;
     margin-top: 220px;
     margin-left: 15px;
@@ -29,12 +29,9 @@ a{
     font-family: u.$font;
     font-weight: bolder;
     background-color: var(--whiteColor);
-    &:hover{
-        border: none;
-        background-color: var(--blueColor);
-        i, a{
-            color: var(--whiteColor);
-        }
+    background-color: var(--blueColor);
+    i, a{
+        color: var(--whiteColor);
     }
 }
 img{

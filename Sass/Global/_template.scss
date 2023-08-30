@@ -19,7 +19,7 @@ section{
         padding-left: 35px;
         margin-top: 25px;
     }
-    .items{
+    .left-bloc-container{
         margin-top: 5px;
         div{
             display: flex;
@@ -28,7 +28,7 @@ section{
             gap: 10px;
             padding: 10px;
             margin-top: 5px;
-            padding-left: 15px;
+            padding-left: 30px;
             &:hover{
                 background-color: var(--whiteColor);
             }
@@ -37,15 +37,10 @@ section{
         .dashboard{
             background-color: var(--whiteColor);
             padding: 10px;
-            padding-left: 15px;
+            padding-left: 30px;
+            margin-top: 25px;
         }
     }
-}
-.header_items{
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 .header{
     padding: 15px;
@@ -58,6 +53,9 @@ section{
         border: 1px solid var(--blackColor);
         border-radius: 5px;
         padding: 5px;
+        i{
+            color: var(--gray);
+        }
         input{
             outline: none;
             border: none;
@@ -65,19 +63,29 @@ section{
             font-family: u.$font;
         }
     }
+
+    .header-user{
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        i{
+            color: var(--gray);
+        }
+    }
 }
-.nav_bloc{
+.header-container{
     @extend .left-bloc;
     display: none;
-    .bar_menu{
-        @extend .items;
+    nav{
+        @extend .left-bloc-container;
         position: absolute;
         background-color: var(--whiteColor);
         margin-top: 94px;
-        margin-left: -200px;
+        margin-left: -250px;
         transition: all 0.5s ease;
         box-shadow: 0px 0px 3px 0px var(--gray);
-        width: 200px;
+        width: 220px;
         height: 100vh;
         display: inline;
         z-index: 10;
@@ -96,7 +104,7 @@ section{
         }  
     }
 }
-.bloc-right{
+.right-bloc{
     width: 100%;
     .bloc-right-blocs{
         padding: 15px;
@@ -190,7 +198,7 @@ section{
     }
 }
 
-#bloc-charts{
+#highcharts{
     height: 250px;
     border-radius: 5px;
     box-shadow: 0px 0px 3px 0px var(--gray);
@@ -198,8 +206,8 @@ section{
 
 table{
     border-collapse: collapse;
-    width: 100%;
     margin-top: 20px;
+    width: 100%;
     th, td{
         padding: 4px 4px;
     }
@@ -207,7 +215,7 @@ table{
         img{
             border-radius: 50%;
             border: 2px solid var(--white);
-            width: 20px;
+            width: 18px;
         }
     }
     thead tr:nth-child(odd){

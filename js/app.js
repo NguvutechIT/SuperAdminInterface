@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded',  function(){
-    const chart = Highcharts.chart('bloc-charts',{
+    const chart = Highcharts.chart('highcharts',{
         chart:{
             type: 'spline',
         },
@@ -8,27 +8,27 @@ document.addEventListener('DOMContentLoaded',  function(){
             text: ' Grades',
         },
         xAxis:{
-            categories:['Mon','Tue','Wed','Thur','Fri','Sat','Sun']
+            categories:['1P','2P','1S','3P','4P','2S','TOT']
         },
         yAxis:{
             title:{
-              text: 'Hours'  
+              text: ''  
             }
         },
         series: [{
-            name:'Synopis',
-            data:[1,2,3,4,5,6,7],
-            color: '#000620',
+            name:'Semestre',
+            data:[1,2,3,4,2,8,1],
+            color: '#bcd9e7',
         },{
-            name:'Total time',
-            data: [3,2,5,4,3,6,1],
+            name:'Totat',
+            data: [6,2,5,4,5,6,1],
             color: '#58585a'
         }]
     });
 });
 
-const icon = document.querySelector(".icon")
-    const barMenu = document.querySelector(".bar_menu")
+const icon = document.querySelector(".menu-icon")
+    const barMenu = document.querySelector("nav")
 
     icon .addEventListener('click',()=>{
     barMenu.classList.toggle('mobile-menu')

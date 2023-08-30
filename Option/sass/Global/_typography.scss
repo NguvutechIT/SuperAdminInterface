@@ -21,14 +21,17 @@ a{
 
 //button
 .logout{
-    border: 1px solid var(--blackColor);
+    border: none;
     border-radius: 20px;
     margin-top: 220px;
     margin-left: 15px;
     padding: 10px 15px;
     font-family: u.$font;
     font-weight: bolder;
-    background-color: var(--whiteColor);
+    background-color: var(--blueColor);
+    i, a{
+        color: var(--whiteColor);
+    }
 }
 .voir-plus{
     margin-top: 10px;
@@ -38,12 +41,6 @@ a{
     margin-left: 0;
     margin-bottom: 10px;
     @extend .logout;
-    &:hover{
-        background-color: var(--blueColor);
-        i, a{
-            color: var(--whiteColor);
-        }
-    }
 }
 img{
     border-radius: 50%;

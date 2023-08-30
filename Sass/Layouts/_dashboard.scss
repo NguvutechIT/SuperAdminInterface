@@ -1,16 +1,16 @@
 @use '../Utils/'as u;
 
 @include u.breakpoint(laptop){
-    .bar_menu{
+    .nav{
         position: absolute;
         top: -33px;
     }
-    .nav_bloc{
+    .header-container{
         display: inline;
         position: absolute;
         top: 0;
         left: 0;
-        .icon{
+        .menu-icon{
             position: absolute;
             margin-left: 23px;
             margin-top: 18px;
@@ -29,7 +29,6 @@
         input{
             width: 100%;
         }
-        
     }
     .left-bloc{
         display: none;
@@ -43,12 +42,12 @@
     .bloc-right-blocs-sublocs2{
         grid-template-columns: 50%;
         row-gap: 20px;
-        .first_item,.bloc-chart{
+        .first_item,.highcharts{
             min-width: 200%;
         }
     }
     @media screen and (max-width:720px) {
-        .bloc-right{
+        .right-bloc{
             .bloc-right-blocs{
                 .bloc-right-blocs-sublocs1{
                     grid-template-columns: 1fr 1fr;
@@ -57,13 +56,13 @@
         }
     }
     @media screen and (max-width:620px){
-        .bar_menu{
+        nav{
             top: 5px;
         }
         .header{
             display: flex;
             flex-direction: column;
-            .header_items{
+            .header-user{
                 justify-content: right;
                 padding-right: 10px;
                 margin-top: 8px;
@@ -78,6 +77,25 @@
         }
     }
     @media screen and (max-width:510px){
+        .header-container{
+            .menu-icon{
+                margin-left: 15px;
+                margin-top: 20px;
+                font-size: 1.3rem;
+            }
+            .right-bloc{
+                .bloc-right-blocs{
+                    padding: 10px;
+                }
+            }
+        }
+        .header{
+            .search_bar{
+                input{
+                    margin-left: 15px;
+                }
+            }
+        }
         #table{
             margin: auto;
             max-width: 440px;
@@ -103,7 +121,7 @@
         .search_bar{
             padding-right: 70px;
         }
-        .bloc-right{
+        .right-bloc{
             .bloc-right-blocs{
                 .bloc-right-blocs-sublocs1{
                     grid-template-columns: 1fr;
@@ -113,7 +131,6 @@
         .bloc_students{
             div{
                 justify-content: center;
-    
             }
             p{
                 text-align: center;
@@ -123,9 +140,9 @@
         .bloc_schools,.bloc_courses,.bloc_incomes{
             @extend .bloc_students;
         }
-        .bloc-chart{
+        .highcharts{
             overflow: auto;
-            #bloc-charts{
+            #highcharts{
                 width: 150%;
                 margin-bottom: 10px;
             }

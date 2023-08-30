@@ -30,10 +30,10 @@ section {
   padding-left: 35px;
   margin-top: 25px;
 }
-.left-bloc .items {
+.left-bloc .container {
   margin-top: 25px;
 }
-.left-bloc .items div {
+.left-bloc .container div {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -42,11 +42,11 @@ section {
   margin-top: 5px;
   padding-left: 30px;
 }
-.left-bloc .items div:hover {
+.left-bloc .container div:hover {
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 1px 0px var(--gray);
 }
-.left-bloc .items .classe {
+.left-bloc .container .classe {
   padding: 10px;
   padding-left: 30px;
   background-color: var(--whiteColor);
@@ -113,41 +113,39 @@ section {
   border-radius: 20px;
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 1px 0px var(--gray);
-}
-.header .add-class:hover {
   background-color: var(--blueColor);
 }
-.header .add-class:hover i, .header .add-class:hover a {
+.header .add-class i, .header .add-class a {
   color: var(--whiteColor);
 }
 
-.ecole-enregistree {
+.classe-enregistree {
   padding: 20px;
 }
 
-.allitems {
+.classe-container {
   padding: 20px;
   margin-top: 10px;
   border-radius: 5px;
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 3px 0px var(--gray);
 }
-.allitems .ecole {
+.classe-container .classe {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.allitems .ecole div {
+.classe-container .classe div {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
 }
-.allitems .ecole div a {
+.classe-container .classe div a {
   color: var(--blueColor);
 }
-.allitems .ecole div div h2 {
+.classe-container .classe div div h2 {
   height: 15px;
   border: 1px solid var(--blueColor);
 }
@@ -170,7 +168,7 @@ a {
 }
 
 .logout {
-  border: 1px solid var(--blackColor);
+  border: none;
   border-radius: 20px;
   margin-top: 220px;
   margin-left: 15px;
@@ -178,12 +176,9 @@ a {
   font-family: "Sen", sans-serif;
   font-weight: bolder;
   background-color: var(--whiteColor);
-}
-.logout:hover {
-  border: none;
   background-color: var(--blueColor);
 }
-.logout:hover i, .logout:hover a {
+.logout i, .logout a {
   color: var(--whiteColor);
 }
 
@@ -213,16 +208,16 @@ img {
   }
 }
 @media (max-width: 480px) {
-  .allitems {
+  .classe-container {
     padding: 10px;
   }
-  .allitems .ecole {
+  .classe-container .classe {
     display: flex;
     flex-direction: column;
     gap: 8px;
     align-items: start;
   }
-  .allitems .ecole div {
+  .classe-container .classe div {
     display: flex;
     justify-content: flex-end;
   }
@@ -230,10 +225,10 @@ img {
     padding-right: 10px;
     padding-left: 10px;
   }
-  .ecole-enregistree {
+  .classe-enregistree {
     padding: 10px;
   }
-  .allitems .items .logout {
+  .classe-container .items .logout {
     margin-bottom: 10px;
   }
 }/*# sourceMappingURL=classe.css.map */

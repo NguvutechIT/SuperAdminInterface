@@ -22,40 +22,34 @@ section {
   grid-template-columns: 20% auto;
 }
 
-.left-bloc, .nav_bloc {
+.left-bloc, .header-container {
   background-color: var(--principalcolor);
   box-shadow: 0px 0px 1px 0px var(--blackColor);
 }
-.left-bloc h2, .nav_bloc h2 {
+.left-bloc h2, .header-container h2 {
   padding-left: 35px;
   margin-top: 25px;
 }
-.left-bloc .items, .nav_bloc .items, .nav_bloc .bar_menu {
+.left-bloc .left-bloc-container, .header-container .left-bloc-container, .header-container nav {
   margin-top: 5px;
 }
-.left-bloc .items div, .nav_bloc .items div, .nav_bloc .bar_menu div {
+.left-bloc .left-bloc-container div, .header-container .left-bloc-container div, .header-container nav div {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
   padding: 10px;
   margin-top: 5px;
-  padding-left: 15px;
+  padding-left: 30px;
 }
-.left-bloc .items div:hover, .nav_bloc .items div:hover, .nav_bloc .bar_menu div:hover {
+.left-bloc .left-bloc-container div:hover, .header-container .left-bloc-container div:hover, .header-container nav div:hover {
   background-color: var(--whiteColor);
 }
-.left-bloc .items .dashboard, .nav_bloc .items .dashboard, .nav_bloc .bar_menu .dashboard {
+.left-bloc .left-bloc-container .dashboard, .header-container .left-bloc-container .dashboard, .header-container nav .dashboard {
   background-color: var(--whiteColor);
   padding: 10px;
-  padding-left: 15px;
-}
-
-.header_items {
-  gap: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  padding-left: 30px;
+  margin-top: 25px;
 }
 
 .header {
@@ -70,58 +64,70 @@ section {
   border-radius: 5px;
   padding: 5px;
 }
+.header .search_bar i {
+  color: var(--gray);
+}
 .header .search_bar input {
   outline: none;
   border: none;
   background: none;
   font-family: "Sen", sans-serif;
 }
+.header .header-user {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header .header-user i {
+  color: var(--gray);
+}
 
-.nav_bloc {
+.header-container {
   display: none;
 }
-.nav_bloc .bar_menu {
+.header-container nav {
   position: absolute;
   background-color: var(--whiteColor);
   margin-top: 94px;
-  margin-left: -200px;
+  margin-left: -250px;
   transition: all 0.5s ease;
   box-shadow: 0px 0px 3px 0px var(--gray);
-  width: 200px;
+  width: 220px;
   height: 100vh;
   display: inline;
   z-index: 10;
   border-top-right-radius: 15px;
 }
-.nav_bloc .bar_menu .dashboard {
+.header-container nav .dashboard {
   margin-top: 15px;
   background-color: var(--principalcolor);
 }
-.nav_bloc .bar_menu div:hover {
+.header-container nav div:hover {
   background-color: var(--principalcolor);
 }
-.nav_bloc .bar_menu.mobile-menu {
+.header-container nav.mobile-menu {
   margin-left: 0px;
 }
 
-.bloc-right {
+.right-bloc {
   width: 100%;
 }
-.bloc-right .bloc-right-blocs {
+.right-bloc .bloc-right-blocs {
   padding: 15px;
 }
-.bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 {
+.right-bloc .bloc-right-blocs .bloc-right-blocs-sublocs1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
 }
-.bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_students, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_schools, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_courses, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_incomes {
+.right-bloc .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_students, .right-bloc .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_schools, .right-bloc .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_courses, .right-bloc .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_incomes {
   padding: 15px;
   border-radius: 5px;
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 3px 0px var(--gray);
 }
-.bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_students div, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_schools div, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_courses div, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_incomes div {
+.right-bloc .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_students div, .right-bloc .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_schools div, .right-bloc .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_courses div, .right-bloc .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_incomes div {
   border-left: 4px solid var(--skyblue);
   display: flex;
   flex-direction: row;
@@ -130,7 +136,7 @@ section {
   padding-bottom: 20px;
   padding-left: 8px;
 }
-.bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_students p, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_schools p, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_courses p, .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_incomes p {
+.right-bloc .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_students p, .right-bloc .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_schools p, .right-bloc .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_courses p, .right-bloc .bloc-right-blocs .bloc-right-blocs-sublocs1 .bloc_incomes p {
   padding-left: 15px;
 }
 @keyframes progress {
@@ -208,7 +214,7 @@ section {
   background-color: var(--principalcolor);
 }
 
-#bloc-charts {
+#highcharts {
   height: 250px;
   border-radius: 5px;
   box-shadow: 0px 0px 3px 0px var(--gray);
@@ -216,8 +222,8 @@ section {
 
 table {
   border-collapse: collapse;
-  width: 100%;
   margin-top: 20px;
+  width: 100%;
 }
 table th, table td {
   padding: 4px 4px;
@@ -225,7 +231,7 @@ table th, table td {
 table tbody tr td p img {
   border-radius: 50%;
   border: 2px solid var(--white);
-  width: 20px;
+  width: 18px;
 }
 table thead tr:nth-child(odd) {
   border-top-left-radius: 5px;
@@ -263,42 +269,42 @@ a {
 }
 
 button {
-  border: 1px solid black;
   border-radius: 20px;
-  margin-top: 220px;
+  border: 1px solid var(--blackColor);
+  margin-top: 200px;
   margin-left: 20px;
   padding: 10px 15px;
   font-family: "Sen", sans-serif;
   font-weight: bolder;
-  background-color: var(--whiteColor);
+  background-color: var(--white);
 }
 
 img {
   border-radius: 50%;
   border: 2px solid var(--white);
   width: 25px;
-  border: 1px solid var(--blackColor);
+  border: 1px solid var(--gray);
 }
 
 @media (max-width: 978px) {
-  .bar_menu {
+  .nav {
     position: absolute;
     top: -33px;
   }
-  .nav_bloc {
+  .header-container {
     display: inline;
     position: absolute;
     top: 0;
     left: 0;
   }
-  .nav_bloc .icon {
+  .header-container .menu-icon {
     position: absolute;
     margin-left: 23px;
     margin-top: 18px;
     cursor: pointer;
     font-size: 1.5rem;
   }
-  .nav_bloc button {
+  .header-container button {
     margin-top: 150px;
   }
   .search_bar {
@@ -322,24 +328,24 @@ img {
     grid-template-columns: 50%;
     row-gap: 20px;
   }
-  .bloc-right-blocs-sublocs2 .first_item, .bloc-right-blocs-sublocs2 .bloc-chart {
+  .bloc-right-blocs-sublocs2 .first_item, .bloc-right-blocs-sublocs2 .highcharts {
     min-width: 200%;
   }
 }
 @media screen and (max-width: 768px) and (max-width: 720px) {
-  .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 {
+  .right-bloc .bloc-right-blocs .bloc-right-blocs-sublocs1 {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (max-width: 768px) and (max-width: 620px) {
-  .bar_menu {
+  nav {
     top: 5px;
   }
   .header {
     display: flex;
     flex-direction: column;
   }
-  .header .header_items {
+  .header .header-user {
     justify-content: right;
     padding-right: 10px;
     margin-top: 8px;
@@ -352,6 +358,17 @@ img {
   }
 }
 @media screen and (max-width: 768px) and (max-width: 510px) {
+  .header-container .menu-icon {
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+  }
+  .header-container .right-bloc .bloc-right-blocs {
+    padding: 10px;
+  }
+  .header .search_bar input {
+    margin-left: 15px;
+  }
   #table {
     margin: auto;
     max-width: 440px;
@@ -373,7 +390,7 @@ img {
   .search_bar {
     padding-right: 70px;
   }
-  .bloc-right .bloc-right-blocs .bloc-right-blocs-sublocs1 {
+  .right-bloc .bloc-right-blocs .bloc-right-blocs-sublocs1 {
     grid-template-columns: 1fr;
   }
   .bloc_students div, .bloc_schools div, .bloc_courses div, .bloc_incomes div {
@@ -383,10 +400,10 @@ img {
     text-align: center;
     margin-left: -55px;
   }
-  .bloc-chart {
+  .highcharts {
     overflow: auto;
   }
-  .bloc-chart #bloc-charts {
+  .highcharts #highcharts {
     width: 150%;
     margin-bottom: 10px;
   }

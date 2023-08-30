@@ -16,18 +16,18 @@ a{
 
 //button
 button{
-    border: 1px solid black;
     border-radius: 20px;
-    margin-top: 220px;
+    border: 1px solid var(--blackColor);
+    margin-top: 200px;
     margin-left: 20px;
     padding: 10px 15px;
     font-family: u.$font;
     font-weight: bolder;
-    background-color: var(--whiteColor);
+    background-color: var(--white);
 }
 img{
     border-radius: 50%;
     border: 2px solid var(--white);
     width: 25px;
-    border: 1px solid var(--blackColor); 
+    border: 1px solid var(--gray); 
 }

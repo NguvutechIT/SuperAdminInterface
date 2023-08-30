@@ -116,57 +116,55 @@ section {
   border-radius: 20px;
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 1px 0px var(--gray);
-}
-.header .add-school:hover {
   background-color: var(--blueColor);
 }
-.header .add-school:hover i, .header .add-school:hover a {
+.header .add-school i, .header .add-school a {
   color: var(--whiteColor);
 }
 
-.ecole-enregistree {
+.option-enregistree {
   padding: 20px;
 }
-.ecole-enregistree .first-item {
+.option-enregistree .first-item {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.ecole-enregistree .first-item div {
+.option-enregistree .first-item div {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
 }
-.ecole-enregistree .first-item div p {
+.option-enregistree .first-item div p {
   color: var(--gray);
 }
 
-.allitems {
+.option-container {
   padding: 10px;
   margin-top: 10px;
   border-radius: 5px;
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 3px 0px var(--gray);
 }
-.allitems .ecole {
+.option-container .option {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 8px;
 }
-.allitems .ecole div {
+.option-container .option div {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
 }
-.allitems .ecole div a {
+.option-container .option div a {
   color: var(--blueColor);
 }
-.allitems .ecole div div h2 {
+.option-container .option div div h2 {
   height: 15px;
   border: 1px solid var(--blueColor);
 }
@@ -189,14 +187,17 @@ a {
 }
 
 .logout, .voir-plus {
-  border: 1px solid var(--blackColor);
+  border: none;
   border-radius: 20px;
   margin-top: 220px;
   margin-left: 15px;
   padding: 10px 15px;
   font-family: "Sen", sans-serif;
   font-weight: bolder;
-  background-color: var(--whiteColor);
+  background-color: var(--blueColor);
+}
+.logout i, .voir-plus i, .logout a, .voir-plus a {
+  color: var(--whiteColor);
 }
 
 .voir-plus {
@@ -206,12 +207,6 @@ a {
   box-shadow: 0px 0px 1px 0px var(--gray);
   margin-left: 0;
   margin-bottom: 10px;
-}
-.voir-plus:hover {
-  background-color: var(--blueColor);
-}
-.voir-plus:hover i, .voir-plus:hover a {
-  color: var(--whiteColor);
 }
 
 img {
@@ -241,13 +236,13 @@ img {
   }
 }
 @media (max-width: 480px) {
-  .allitems .ecole {
+  .option-container .option {
     display: flex;
     flex-direction: column;
     gap: 8px;
     align-items: start;
   }
-  .allitems .ecole div {
+  .option-container .option div {
     display: flex;
     justify-content: flex-end;
   }
@@ -255,10 +250,7 @@ img {
     padding-right: 10px;
     padding-left: 10px;
   }
-  .ecole-enregistree {
+  .option-enregistree {
     padding: 10px;
-  }
-  .allitems .items .logout {
-    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=option.css.map */

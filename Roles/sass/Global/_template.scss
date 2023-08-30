@@ -103,11 +103,9 @@ section{
         border-radius: 20px;
         background-color: var(--whiteColor);
         box-shadow: 0px 0px 1px 0px var(--gray);
-        &:hover{
-            background-color: var(--blueColor);
-            i, a{
-                color: var(--whiteColor);
-            }
+        background-color: var(--blueColor);
+        i, a{
+            color: var(--whiteColor);
         }
     }
 
@@ -127,7 +125,7 @@ section{
         }
     }
 }
-.allitems{
+.roles-container{
     padding: 10px;
     margin-top: 10px;
     border-radius: 5px;

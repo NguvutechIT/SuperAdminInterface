@@ -42,7 +42,7 @@
         
     }
     @media screen and (max-width:570px){
-        .allitems{
+        .cours-container{
             .cours{
                 display: flex;
                 flex-direction: column;
@@ -65,7 +65,7 @@
         padding: 10px;
         
     } 
-    .allitems{
+    .cours-container{
         .items{
             .logout{
                 margin-bottom: 10px;

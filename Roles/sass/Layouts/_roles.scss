@@ -26,7 +26,7 @@
     }
 }
 @include u.breakpoint(mobile){
-    .allitems{
+    .roles-container{
         .ecole{
             display: flex;
             flex-direction: column;
@@ -45,11 +45,4 @@
     .all-roles{
         padding: 10px;
     } 
-    .allitems{
-        .items{
-            .logout{
-                margin-bottom: 10px;
-            }
-        } 
-    }  
 }

@@ -26,7 +26,7 @@
 }
 
 @include u.breakpoint(mobile){
-    .allitems{
+    .ecole-container{
         .ecole{
             display: flex;
             flex-direction: column;
@@ -44,12 +44,5 @@
     } 
     .ecole-enregistree{
         padding: 10px;
-    } 
-    .allitems{
-        .items{
-            .logout{
-                margin-bottom: 10px;
-            }
-        } 
     }  
 }

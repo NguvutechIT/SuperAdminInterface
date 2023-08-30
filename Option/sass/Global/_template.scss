@@ -104,16 +104,14 @@ section{
         border-radius: 20px;
         background-color: var(--whiteColor);
         box-shadow: 0px 0px 1px 0px var(--gray);
-        &:hover{
-            background-color: var(--blueColor);
-            i, a{
-                color: var(--whiteColor);
-            }
+        background-color: var(--blueColor);
+        i, a{
+            color: var(--whiteColor);
         }
     }
 
 }
-.ecole-enregistree{
+.option-enregistree{
     padding: 20px;
 
     .first-item{
@@ -128,13 +126,13 @@ section{
         }
     }
 }
-.allitems{
+.option-container{
     padding: 10px;
     margin-top: 10px;
     border-radius: 5px;
     background-color: var(--whiteColor);
     box-shadow: 0px 0px 3px 0px var(--gray);
-    .ecole{
+    .option{
         @include display_flex;
         justify-content: space-between;
         padding: 8px;

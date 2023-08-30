@@ -115,11 +115,9 @@ section {
   border-radius: 20px;
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 1px 0px var(--gray);
-}
-.header .add-roles:hover {
   background-color: var(--blueColor);
 }
-.header .add-roles:hover i, .header .add-roles:hover a {
+.header .add-roles i, .header .add-roles a {
   color: var(--whiteColor);
 }
 
@@ -142,30 +140,30 @@ section {
   color: var(--gray);
 }
 
-.allitems {
+.roles-container {
   padding: 10px;
   margin-top: 10px;
   border-radius: 5px;
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 3px 0px var(--gray);
 }
-.allitems .type-of-roles {
+.roles-container .type-of-roles {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 8px;
 }
-.allitems .type-of-roles div {
+.roles-container .type-of-roles div {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
 }
-.allitems .type-of-roles div a {
+.roles-container .type-of-roles div a {
   color: var(--blueColor);
 }
-.allitems .type-of-roles div div h2 {
+.roles-container .type-of-roles div div h2 {
   height: 15px;
   border: 1px solid var(--blueColor);
 }
@@ -188,14 +186,17 @@ a {
 }
 
 .logout, .voir-plus {
-  border: 1px solid var(--blackColor);
+  border: none;
   border-radius: 20px;
   margin-top: 220px;
   margin-left: 15px;
   padding: 10px 15px;
   font-family: "Sen", sans-serif;
   font-weight: bolder;
-  background-color: var(--whiteColor);
+  background-color: var(--blueColor);
+}
+.logout i, .voir-plus i, .logout a, .voir-plus a {
+  color: var(--whiteColor);
 }
 
 .voir-plus {
@@ -205,12 +206,6 @@ a {
   box-shadow: 0px 0px 1px 0px var(--gray);
   margin-left: 0;
   margin-bottom: 10px;
-}
-.voir-plus:hover {
-  background-color: var(--blueColor);
-}
-.voir-plus:hover i, .voir-plus:hover a {
-  color: var(--whiteColor);
 }
 
 @media screen and (max-width: 978px) and (max-width: 900px) {
@@ -233,13 +228,13 @@ a {
   }
 }
 @media (max-width: 480px) {
-  .allitems .ecole {
+  .roles-container .ecole {
     display: flex;
     flex-direction: column;
     gap: 8px;
     align-items: start;
   }
-  .allitems .ecole div {
+  .roles-container .ecole div {
     display: flex;
     justify-content: flex-end;
   }
@@ -249,8 +244,5 @@ a {
   }
   .all-roles {
     padding: 10px;
-  }
-  .allitems .items .logout {
-    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=roles.css.map */
